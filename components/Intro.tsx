@@ -52,7 +52,7 @@ export default function Intro({ onStart, onContinue, hasProgress }: { onStart: (
     <div className="intro-page">
       <header className="hero">
         {ORG && <div className="eyebrow">{ORG}</div>}
-        <h1>Family Financial Information Form</h1>
+        <h1>AFEX Hub Financial Information Form</h1>
         <p className="lead">
           A worksheet for gathering the information needed for the <strong>CSS Profile</strong> (College Board) and for each
           college&rsquo;s financial aid documents.
@@ -90,7 +90,7 @@ export default function Intro({ onStart, onContinue, hasProgress }: { onStart: (
 
       <section className="card">
         <h2>How it works</h2>
-        <ul>
+        <ul className="list-disc">
           <li>Complete one section at a time. The progress bar at the top shows where you are.</li>
           <li>Your answers are saved on this device as you type, so you can close the page and come back later.</li>
           <li>At the end you will see a <strong>preview of everything you entered</strong> and can edit any section before you submit.</li>
@@ -99,7 +99,7 @@ export default function Intro({ onStart, onContinue, hasProgress }: { onStart: (
 
       <section className="card">
         <h2>How to fill it in</h2>
-        <ul>
+        <ul className="list-disc">
           <li>Use the same currency throughout and write its name in the first section. Give whole-year amounts unless a box says otherwise.</li>
           <li>Use the exact figure from a document wherever you have one. Write &ldquo;estimate&rdquo; beside any figure you had to guess, and &ldquo;N/A&rdquo; where a question does not apply to you.</li>
           <li>The CSS Profile asks about the most recent completed tax year (&ldquo;last year&rdquo;), the year before it (&ldquo;two years ago&rdquo;), and your expected income this year. Write the actual calendar or tax years where asked.</li>
@@ -119,7 +119,7 @@ export default function Intro({ onStart, onContinue, hasProgress }: { onStart: (
           {DOC_GROUPS.map((g) => (
             <div key={g.title} className="doc-group">
               <h3>{g.title}</h3>
-              <ul>
+              <ul className="list-disc">
                 {g.items.map((i) => (
                   <li key={i}>{i}</li>
                 ))}
