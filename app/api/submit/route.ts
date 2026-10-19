@@ -5,7 +5,7 @@ import path from 'path';
 import { validateAll } from '@/lib/validate';
 import { buildSummary, toText } from '@/lib/summary';
 
-export const runtime = 'nodejs';
+// export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
 
 const MAX_BYTES = 500_000;
